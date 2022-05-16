@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Belle Collection Books</title>
+        <link rel="shortcut icon" href="images/belle.jpg">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="scripts/index.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>    
+    </head>
+    <body class="grid-container" onload="showFavorites()">
+        <div class="header">
+        <header>
+            <img src="images/belle_library.jpg" alt="Belle Library" width="500" height="350">
+        </header>
+        <nav>
+            <a href="search.html">Search</a>
+            <a href="#">All my favorites</a>
+        </nav>
+        </div>
+        <main class="main">
+            <h2>Search a Favorite Book</h2>
+                <input type="search" onkeyup="searchbar()" placeholder="Search book.." id="lovely" autofocus >
+                <button type="submit" > <img src="images/search.png" width="30" height="30" alt= "Search"></button>
+            <br>
+        </main>
+        <div class="here">
+            <h2>My favorite Books</h2>
+            <div id="list"></div>
+        </div>
+         <footer class="footer">
+            <p>&copy; AriaSp - 2021 | All Rights Reserved</p>
+        </footer>
+        <script id = "book-template" type = "text/x-handlebars-template">
+            <ul id={{id}}>
+            {{#each data}}
+            <li id={{id}}>{{author}} - {{title}}</li>
+            <details id={{id}}> Review : {{review}} </details>
+            <button id = {{id}} onclick="deleteme(this.id)">Delete</button>
+            <button id = {{id}} onclick="editme(this.id)">Edit</button>
+            {{/each}}
+            </ul>
+            </script>
+    </body>
+
+</html>

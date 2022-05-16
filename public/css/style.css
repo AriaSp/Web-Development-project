@@ -1,0 +1,126 @@
+@font-face {
+    font-family: disney;
+    src: url(waltograph42.ttf);
+}
+
+body{
+    font-family: disney;
+    background-color: #c68c53;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto ;
+    align-items: center;
+    grid-template-areas: 
+    'header'
+    'main'
+    'here'
+    'footer';
+}
+
+.header {
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer {
+    font-size: 23px;
+    text-align: center;
+}
+
+.header nav a {
+    padding: 25px;
+    margin-bottom: 20px;
+    display:inline-block;
+    color:#ecf2f9;
+    background-color: #5188c8;
+    text-decoration: none; 
+    letter-spacing: 1.8px; 
+    font-size : 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header nav a:hover {
+    background: #3366ff ; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.main {
+    font-size: 20px;
+    text-align: center;
+}
+
+.main h2 {
+    font-size : 40px;
+}
+
+input {
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 450px;
+    height: 35px;
+}
+
+.here {
+    font-size: 24px;  
+    line-height: 1.6;
+    text-decoration: none; 
+    letter-spacing: 1.8px; 
+    text-align: center;
+}
+
+.here ul li {
+    list-style: none;
+}
+.here textarea {
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 450px;
+    height: 35px;
+}
+
+.here button {
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;      
+}
+
+.formdata {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+.here textarea {
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 450px;
+    height: 100px;
+}
+
+.formdata input {
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 450px;
+    height: 35px;
+}
+
+.formdata button {
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;      
+}

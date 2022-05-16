@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Belle Collection Books</title>
+        <link rel="shortcut icon" href="images/belle.jpg">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="scripts/index.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body class="grid-container">
+        <div class="header">
+        <header>
+            <img src="images/belle_library.jpg" alt="Belle Library" width="500" height="350">
+        </header>
+        <nav>
+            <a href="#">Search</a>
+            <a href="myBooks.html">All my favorites</a>
+        </nav>
+        </div>
+        <main class="main">
+            <h2>Search</h2>
+            <input type="search" placeholder="Search.." id="books" autofocus >
+            <button type="submit" onclick="say()"> <img src="images/search.png" width="30" height="30" alt= "Search"></button>
+            <br>
+        </main>
+        <div class="here">
+            <ul id ="booklist">
+            </ul>
+        </div>
+         <footer class="footer">
+            <p>&copy; AriaSp - 2021 | All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
